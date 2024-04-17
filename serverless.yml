@@ -1,0 +1,16 @@
+service: typescript-environment
+frameworkVersion: '3'
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+functions:
+  main:
+    handler: index.handler

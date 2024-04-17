@@ -1,0 +1,21 @@
+{
+  "name": "demo-11-typescript-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vinicius Pereira de Oliveira <vinicius.po@einstein.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "serverless": "^3.38.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^13.3.3",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "invoke-local": "yarn sls invoke local -f main"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
